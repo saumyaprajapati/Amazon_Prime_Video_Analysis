@@ -1,0 +1,122 @@
+🌞Color Pallette : 
+    - CSV
+
+        00A8E8,1A98FF,0F172A,1E293B,94A3B8
+
+    - CSV With #
+
+        #00A8E8, #1A98FF, #0F172A, #1E293B, #94A3B8
+
+    - Array
+    
+        ["00A8E8","1A98FF","0F172A","1E293B","94A3B8"]
+    
+    - Object
+    
+        {"Fresh Sky":"00A8E8","Dodger Blue":"1A98FF","Prussian Blue":"0F172A","Deep Space Blue":"1E293B","Cool Steel":"94A3B8"}
+    
+    - Extended Array
+    
+        [{"name":"Fresh Sky","hex":"00A8E8","rgb":[0,168,232],"cmyk":[100,28,0,9],"hsb":[197,100,91],"hsl":[197,100,45],"lab":[65,-13,-42]},
+         {"name":"DodgerBlue","hex":"1A98FF","rgb":[26,152,255],"cmyk":[90,40,0,0],"hsb":[207,90,100],"hsl":[207,100,55],"lab":[62,5,-60]},
+         {"name":"Prussian Blue","hex":"0F172A","rgb":[15,23,42],"cmyk":[64,45,0,84],"hsb":[222,64,16],"hsl":[222,47,11],"lab":[8,3,-14]},
+         {"name":"Deep Space Blue","hex":"1E293B","rgb":[30,41,59],"cmyk":[49,31,0,77],"hsb":[217,49,23],"hsl":[217,33,17],"lab":[16,1,-13]},
+         {"name":"Cool Steel","hex":"94A3B8","rgb":[148,163,184],"cmyk":[20,11,0,28],"hsb":[215,20,72],"hsl":[215,20,65],"lab":[66,-1,-13]}]
+    
+    - XML
+    
+        <palette>
+          <color name="Fresh Sky" hex="00A8E8" r="0" g="168" b="232" />
+          <color name="Dodger Blue" hex="1A98FF" r="26" g="152" b="255" />
+          <color name="Prussian Blue" hex="0F172A" r="15" g="23" b="42" />
+          <color name="Deep Space Blue" hex="1E293B" r="30" g="41" b="59" />
+          <color name="Cool Steel" hex="94A3B8" r="148" g="163" b="184" />
+        </palette>
+
+🌞Steps Taken For Analysis :-
+1.Replaced Ratings With New Ratings 
+    Originally Their Were 25 Ratings 
+    | Rating     | Meaning                                                                               |
+    | ---------- | ------------------------------------------------------------------------------------- |
+    | `G`        | General Audiences – Suitable for all ages                                             |
+    | `PG`       | Parental Guidance Suggested                                                           |
+    | `PG-13`    | Parents Strongly Cautioned – Some material may be inappropriate for children under 13 |
+    | `R`        | Restricted – Under 17 requires accompanying parent/adult                              |
+    | `NC-17`    | No one 17 and under admitted                                                          |
+    | `TV-Y`     | Designed for all children                                                             |
+    | `TV-Y7`    | Suitable for children age 7 and older                                                 |
+    | `TV-G`     | General audience                                                                      |
+    | `TV-PG`    | Parental guidance suggested                                                           |
+    | `TV-14`    | May be unsuitable for children under 14                                               |
+    | `TV-MA`    | Mature audiences only (17+)                                                           |
+    | `TV-NR`    | TV Not Rated                                                                          |
+    | `NR`       | Not Rated                                                                             |
+    | `UNRATED`  | No official rating assigned                                                           |
+    | `7+`       | Suitable for ages 7+                                                                  |
+    | `13+`      | Suitable for ages 13+                                                                 |
+    | `16+`      | Suitable for ages 16+                                                                 |
+    | `18+`      | Suitable for adults (18+)                                                             |
+    | `16`       | Equivalent to 16+                                                                     |
+    | `ALL`      | Suitable for all ages                                                                 |
+    | `ALL_AGES` | Suitable for all ages                                                                 |
+    | `AGES_16_` | Suitable for ages 16+                                                                 |
+    | `AGES_18_` | Suitable for ages 18+                                                                 |
+    | `NOT_RATE` | Not Rated                                                                             |
+    | `NaN`      | Missing rating                                                                        |
+
+    Now Reduced Rating Upto 17
+
+3.
+        To map your five-color palette effectively, you need a strict color hierarchy based on data visualization best practices. 
+        Assigning a specific role to each color before you start builds consistency and prevents your Power BI report from looking cluttered.
+        Here is the strategic framework to map your five colors to your dashboard components:
+        ## 1. The Dominant Neutral (60% of the Canvas)
+        
+        * The Palette Color: Your lightest or softest color (e.g., off-white, light gray, pale pastel).
+        * Where to Use It:
+        * Dashboard background canvas.
+           * Card visual background containers.
+           * Slicer background panels.
+        
+        ## 2. The Core Data Color (20% of the Canvas)
+        
+        * The Palette Color: Your primary brand color or a standard, muted color (e.g., navy blue, slate gray).
+        * Where to Use It:
+        * Standard bar and column charts.
+           * The primary line in line charts.
+           * Category text headers.
+           * KPI large number callouts.
+        
+        ## 3. The Secondary Data Color (10% of the Canvas)
+        
+        * The Palette Color: A color that harmonizes with your core data color but offers distinct visual separation.
+        * Where to Use It:
+        * The second data series in a multi-bar chart.
+           * Comparison lines (e.g., "Last Year" vs. "This Year").
+           * Stacked column segments.
+        
+        ## 4. The Accent / Action Color (5% of the Canvas)
+        
+        * The Palette Color: Your brightest, highest-contrast color.
+        * Where to Use It:
+        * Interactive buttons (e.g., "Clear Filters" or "Page Navigation").
+           * Active slicer selections.
+           * Hover states.
+           * Important data callout points (e.g., highlighting a specific record peak).
+        
+        ## 5. The Alert / Context Color (5% of the Canvas)
+        
+        * The Palette Color: Reserved for operational context (typically a warning color like soft red, amber, or deep green).
+        * Where to Use It:
+        * Conditional formatting rules.
+           * KPI status indicators (e.g., a small red dot for missed targets).
+           * Exception reporting elements.
+        
+4.
+    
+
+
+    
+
+
+
